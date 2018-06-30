@@ -1,0 +1,106 @@
+body {
+    background: black;
+    color: white;
+   
+    text-align: center;
+}
+
+.wrapper {
+    padding: 10px;
+    font-family: 'Forum', cursive;
+}
+
+#cc-header {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    background: -webkit-linear-gradient(left, red, red, yellow, lime, blue, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#instructions {
+    border: 5px outset white;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 900px;
+    border-radius: 200px;
+}
+
+p {
+    margin: 5px;
+}
+
+.stats {
+    margin: auto;
+    /* border: 5px outset white; */
+    max-width: 940px;
+    height: 150px;
+    font-size: 30px;
+    display: flex;
+}
+
+.winning, .losing, .compScore, .playerScore {
+    margin: auto;
+    padding: 20px;
+    line-height: 50px;
+}
+
+footer {
+    border-top: 2px solid white;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: 'Forum', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#sw-link:hover {
+    color: red;
+}
+
+
+/* Crystal Styling */
+.crystals {
+    margin: auto;
+    max-width: 940px;
+    /* border: 1px solid magenta; */
+}
+
+.crystal-img {
+    max-width: 200px;
+    margin: 10px;
+    /* border: 1px solid lime; */
+}
+
+.display-together {
+    max-width: 450px;
+    display: inline;
+}
+
+.crystal-img:active {
+    transform: rotate(10deg); 
+}
+
+
+@media screen and (max-width:940px) {
+    .crystal-img {
+       width: 150px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .winning, .losing, .compScore, .playerScore {
+        width: 100%;
+    }
+}

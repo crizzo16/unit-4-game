@@ -1,0 +1,171 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: black;
+    background: url(../images/background02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    font-size: 7vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    font-family: "Stalinist One", cursive;
+}
+
+.wrapper {
+    padding: 0px 30px 30px 30px;
+    min-height: 100%;
+    margin-bottom: -30px;
+}
+
+
+/***** Container Boxes CSS *****/
+.basic-box {
+    background: rgba(233, 233, 233, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 242px;
+}
+
+.select-character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fight-stage {
+    margin: 10px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    min-height: 395px;
+}
+
+
+/***** Rules CSS *****/
+#rules-header {
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.rules {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/***** Button CSS *****/
+.btn {
+    font-size: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.attack-btn:active {
+    color: red;
+}
+
+.reset-btn:active {
+    color:blue;
+}
+
+
+
+/**** Character Boxes ****/
+.character-box {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.character-box:active {
+     transform: rotate(2deg); 
+}
+
+.death {
+    filter: brightness(30%);
+}
+
+.character-name {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.character-image {
+    width: 90%;
+    border-radius: 5%;
+}
+
+.character-hit-points {
+    font-size: 15px;
+}
+
+/* Different Character States */
+
+.select-character {
+    background: rgba(255, 255, 255, .2);
+    color: white;
+    border: 1px solid grey;
+}
+
+.player-character {
+    background: rgba(0, 0, 255, .2);
+    border: 1px solid blue;
+}
+
+.enemy-character {
+    background: rgba(255, 0, 0, .2);
+    color: white;
+    border: 1px solid red;
+}
+
+.defender-character {
+    border: 1px solid green;
+    background: rgba(0, 128, 0, .2);
+}
+
+/***** Footer Styling *****/
+footer {
+    border-top: 2px solid white;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#cc-link {
+    color: yellow;
+}
+
+#cc-link:hover {
+    color: rgb(255, 200, 0);
+}

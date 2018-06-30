@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+    <!-- Link to CSS stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Forum|Sigmar+One" rel="stylesheet">
+
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="cc-header">Crystal Collector</h1>
+        </header>
+        <div id="instructions">
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+            <p>
+                There are four crystals below. By clicking on a crystal you will add a certain amount of points to your total score.
+            </p>
+            <p>
+                You win the game by matching your total score to the random number generated, and you lose the game by if your total score
+                goes above the random number.
+            </p>
+            <p>
+                The value of each crystal is hidden from you until you click on it.
+            </p>
+            <p>
+                Each time when the game starts, the game will change the values of each crystal.
+            </p>
+        </div>
+        <div class="stats">
+            <div class="winning">
+                <h3 id="winWord">Wins</h3>
+                <h3>
+                    <span id="wins"></span>
+                </h3>
+            </div>
+            <div class="losing">
+                <h3 id="loseWord">Losses</h3>
+                <h3>
+                    <span id="losses"></span>
+                </h3>
+            </div>
+            <div class="playerScore">
+                <h3>Your Score</h3>
+                <h3>
+                    <span id="userScore"></span>
+                </h3>
+            </div>
+            <div class="compScore">
+                <h3>Compare To</h3>
+                <h3>
+                    <span id="compareScore"></span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="crystals">
+            <div class="display-together">
+                <img class="crystal-img" id="red-crystal" src="assets/images/red-crystal.png" />
+                <img class="crystal-img" id="yellow-crystal" src="assets/images/yellow-crystal.png" />
+            </div>
+            <div class="display-together">
+                <img class="crystal-img" id="green-crystal" src="assets/images/green-crystal.png" />
+                <img class="crystal-img" id="blue-crystal" src="assets/images/blue-crystal.png" />
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        Had fun playing this game? Try the
+        <a id="sw-link" href="starwars.html">Star Wars</a> game!
+    </footer>
+
+</body>
+
+</html>
